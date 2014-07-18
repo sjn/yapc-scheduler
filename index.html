@@ -43,55 +43,82 @@
     </style>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
-    <script src="http://xantronix.net/yapc.json"></script>
     <script>
         $(function () {
-            var outer = $('#outer');
-            $.each( tracks, function (i,track) {
-                div = $('<div>').html( $('<h2>').html( track.name ) );
-                ul = $('<ul>');
-                div.append(ul);
-                $.each(track.talks, function (i,talk) {
-                    li = $('<li class="talk">').html( talk.name );
-                    li.addClass( talk.tag );
-                    li.addClass( 'size-' + talk.size );
-                    li.attr({
-                        tag: talk.tag,
-                        size: talk.size,
-                        popularity: talk.popularity
-                    });
-                    ul.append(li);
-                });
-                outer.append(div);
-            });
 
-            uls = outer.find('ul');
-            uls.sortable({
-                connectWith: uls,
-                cancel: 'li:not(.talk)',
-            }).disableSelection;
-
-            $('#save').click(function () {
-                $.each(tracks, function (i, v) {
-                    ul = $(uls[i]);
-                    v.talks = $.map(ul.find('li'), function (v, i) {
-                        var $v = $(v);
-                        console.log($v);
-                        return {
-                            tag: $v.attr('tag'),
-                            size: $v.attr('size'),
-                            popularity: $v.attr('popularity'),
-                            name: $v.html(),
-                        }
-                    });
-                });
+            process_tracks = function (tracks) {
                 console.log(tracks);
+                var outer = $('#outer');
+                console.log("1");
+                $.each( tracks, function (i,track) {
+                    console.log("2");
+                    div = $('<div>').html( $('<h2>').html( track.name ) );
+                    ul = $('<ul>');
+                    div.append(ul);
+                    $.each(track.talks, function (i,talk) {
+                        li = $('<li class="talk">').html( talk.name );
+                        li.addClass( talk.tag );
+                        li.addClass( 'size-' + talk.size );
+                        li.attr({
+                            tag: talk.tag,
+                            size: talk.size,
+                            popularity: talk.popularity
+                        });
+                        ul.append(li);
+                    });
+                    outer.append(div);
+                });
+
+                uls = outer.find('ul');
+                uls.sortable({
+                    connectWith: uls,
+                    cancel: 'li:not(.talk)',
+                }).disableSelection;
+
+                $('#save').click(function () {
+                    $.each(tracks, function (i, v) {
+                        ul = $(uls[i]);
+                        v.talks = $.map(ul.find('li'), function (v, i) {
+                            var $v = $(v);
+                            console.log($v);
+                            return {
+                                tag: $v.attr('tag'),
+                                size: $v.attr('size'),
+                                popularity: $v.attr('popularity'),
+                                name: $v.html(),
+                            }
+                        });
+                    });
+                    $.ajax({
+                        url: '/', 
+                        type: 'POST',
+                        data: { 'json': JSON.stringify(tracks) }, 
+                        dataType: 'text',
+                        success: function (query) {
+                            alert(query);
+                            window.location = '?' + query;
+                        },
+                        complete: function (a,b,c) {
+                            console.log(b,c);
+                        },
+                    });
+                });
+            };
+
+            var query = window.location.search.substring(1) || 'yapc.json';
+            $.ajax({
+                url: '/',
+                data: { 'query': query },
+                dataType: 'json',
+                success: process_tracks,
+                complete: function (a,b,c) { console.log(b,c) },
             });
+
         });
     </script>
 </head>
 <body>
-    <h1> Talk sorter prototype (no backend saving...) </h1>
+    <h1> Talk sorter prototype </h1>
     <button id="save">save (WIP)</button>
     <ul id="outer">
     </ul>

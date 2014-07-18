@@ -1,0 +1,649 @@
+[
+   {
+      "name" : "Day 1: Musala",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Keynote (11:00) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "1",
+            "name" : "How The Camel Is De-Cocooning (1) (50m)",
+            "duration" : "50",
+            "tag" : "advocacy",
+            "size" : 4
+         },
+         {
+            "popularity" : "1",
+            "name" : "The Outreach Program for Women - When I get involved in Open Source community (1) (20m)",
+            "duration" : "20",
+            "tag" : "advocacy",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Recruitment in Perl - The State of the Perl Recruitment Market (0) (20m)",
+            "duration" : "20",
+            "tag" : "advocacy",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Creative Perlmongership (0) (50m)",
+            "duration" : "50",
+            "tag" : "advocacy",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "YAMPP - Yet Another Marketing Plan for Perl (0) (50m)",
+            "duration" : "50",
+            "tag" : "advocacy",
+            "size" : 4
+         },
+         {
+            "popularity" : "2",
+            "name" : "Code I'm proud of (2) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "1",
+            "name" : "Adventures in civic hacking - FixMyStreet's Open311 support (1) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "A geo search engine in a few lines of perl (0) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Auditing and toughening as part of the Security Development Lifecycle (0) (50m)",
+            "duration" : "50",
+            "tag" : "misc",
+            "size" : 4
+         }
+      ]
+   },
+   {
+      "name" : "Day 1: Rodopi",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Keynote (11:00) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Perl in Automotive Logistics (0) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Translation with context (0) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Unknown (0) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Automatization Network infrastructure (0) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Running Slovenian national video and audio archive on Perl Dancer. (0) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Open source deep sky images using perl (0) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Get Me to the Pub Please (0) (20m)",
+            "duration" : "20",
+            "tag" : "misc",
+            "size" : 2
+         },
+         {
+            "popularity" : "4",
+            "name" : "How to Fake a Database Design (4) (50m)",
+            "duration" : "50",
+            "tag" : "db",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "SQL::Abstract::FromQuery (0) (20m)",
+            "duration" : "20",
+            "tag" : "db",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Dancer and DBIx::Class (0) (50m)",
+            "duration" : "50",
+            "tag" : "db",
+            "size" : 4
+         },
+         {
+            "popularity" : "2",
+            "name" : "Reading the layercake, an introduction to PerlIO (2) (20m)",
+            "duration" : "20",
+            "tag" : "deep",
+            "size" : 2
+         }
+      ]
+   },
+   {
+      "name" : "Day 1: Vitosha",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Keynote (11:00) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "1",
+            "name" : "GOTO statement considered awesome (1) (50m)",
+            "duration" : "50",
+            "tag" : "deep",
+            "size" : 4
+         },
+         {
+            "popularity" : "1",
+            "name" : "Functional Pe(a)rls: When is a Hash not a Hash? (1) (50m)",
+            "duration" : "50",
+            "tag" : "deep",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Regex 101 (0) (50m)",
+            "duration" : "50",
+            "tag" : "deep",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Easy debugging with Devel::hdb (0) (20m)",
+            "duration" : "20",
+            "tag" : "deep",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Create your containers with perl (0) (50m)",
+            "duration" : "50",
+            "tag" : "deep",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Digest:SHA is broken (0) (20m)",
+            "duration" : "20",
+            "tag" : "deep",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Perl Secret (0) (20m)",
+            "duration" : "20",
+            "tag" : "deep",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Extending Syntax - Functional Programming meets Macros (0) (50m)",
+            "duration" : "50",
+            "tag" : "deep",
+            "size" : 4
+         }
+      ]
+   },
+   {
+      "name" : "Day 2: Musala",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Keynote (16:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "How to: more faster \"make test\" (0) (20m)",
+            "duration" : "20",
+            "tag" : "deep",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Structured exceptions in Moose (0) (50m)",
+            "duration" : "50",
+            "tag" : "deep",
+            "size" : 4
+         },
+         {
+            "popularity" : "3",
+            "name" : "SQL for accountants: understanding the beast via SpreadSheets (3) (50m)",
+            "duration" : "50",
+            "tag" : "general",
+            "size" : 4
+         },
+         {
+            "popularity" : "2",
+            "name" : "Why upgrade Perl? Modernising real-world programs (2) (20m)",
+            "duration" : "20",
+            "tag" : "general",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Sympa : a mailing lists manager and more (0) (50m)",
+            "duration" : "50",
+            "tag" : "general",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Docker with Perl - an Introduction (0) (20m)",
+            "duration" : "20",
+            "tag" : "general",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Getting rid of legacy code in a large distributed high traffic web app - a multistage migration (0) (20m)",
+            "duration" : "20",
+            "tag" : "general",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Some Dist::Zilla::Plugin:: best practices (0) (20m)",
+            "duration" : "20",
+            "tag" : "general",
+            "size" : 2
+         },
+         {
+            "popularity" : "4",
+            "name" : "Plack for Fun and Profit (4) (50m)",
+            "duration" : "50",
+            "tag" : "web",
+            "size" : 4
+         }
+      ]
+   },
+   {
+      "name" : "Day 2: Rodopi",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Keynote (16:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "3",
+            "name" : "Dancer: Getting to Hello World (3) (20m)",
+            "duration" : "20",
+            "tag" : "web",
+            "size" : 2
+         },
+         {
+            "popularity" : "2",
+            "name" : "OX - yet another web framework (2) (50m)",
+            "duration" : "50",
+            "tag" : "web",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Perl in the Cloud - Update (0) (50m)",
+            "duration" : "50",
+            "tag" : "web",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Building an AWS SDK for Perl (0) (50m)",
+            "duration" : "50",
+            "tag" : "web",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Behind the scenes of a grown-up web application (0) (20m)",
+            "duration" : "20",
+            "tag" : "web",
+            "size" : 2
+         },
+         {
+            "popularity" : "0",
+            "name" : "Plack::App::AutoCRUD (0) (50m)",
+            "duration" : "50",
+            "tag" : "web",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Web automation with WWW::Mechanize::PhantomJS (0) (50m)",
+            "duration" : "50",
+            "tag" : "web",
+            "size" : 4
+         }
+      ]
+   },
+   {
+      "name" : "Day 2: Vitosha",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Keynote (16:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "MVC-templates-routes web frameworks - is that all there is? (0) (50m)",
+            "duration" : "50",
+            "tag" : "web",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "SyContent - Content in the Cloud with V8 (0) (50m)",
+            "duration" : "50",
+            "tag" : "web",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Ado - framework for web projects on Mojolicious (0) (20m)",
+            "duration" : "20",
+            "tag" : "web",
+            "size" : 2
+         },
+         {
+            "popularity" : "5",
+            "name" : "Adventures in Perl 6 Asynchrony (5) (50m)",
+            "duration" : "50",
+            "tag" : "perl6",
+            "size" : 4
+         },
+         {
+            "popularity" : "5",
+            "name" : "Rakudo and MoarVM Performance Advances (5) (50m)",
+            "duration" : "50",
+            "tag" : "perl6",
+            "size" : 4
+         },
+         {
+            "popularity" : "0",
+            "name" : "Perl 6 in context (0) (50m)",
+            "duration" : "50",
+            "tag" : "perl6",
+            "size" : 4
+         }
+      ]
+   },
+   {
+      "name" : "Day 3: Musala",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Keynote (16:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         }
+      ]
+   },
+   {
+      "name" : "Day 3: Rodopi",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Keynote (16:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         }
+      ]
+   },
+   {
+      "name" : "Day 3: Vitosha",
+      "talks" : [
+         {
+            "popularity" : "0",
+            "name" : "Lunch (11:45) (0) (75m)",
+            "duration" : "75",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Coffee break (15:45) (0) (30m)",
+            "duration" : "30",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Keynote (16:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         },
+         {
+            "popularity" : "0",
+            "name" : "Lightning talks (17:15) (0) (45m)",
+            "duration" : "45",
+            "tag" : "all",
+            "size" : 0
+         }
+      ]
+   }
+]
