@@ -3,7 +3,7 @@
     <style>
         ul#outer div {
             float: left;
-            max-width: 8%;
+            max-width: 9%;
         }
         ul#outer ul {
             background: #eee;
@@ -12,21 +12,34 @@
         }
         ul#outer div li {
             list-style-type: none;
-            padding: 2px;;
-            border: solid 1px black;
-            margin-top: 1px; 
+            padding: 2px;
+            border-bottom: solid 1px black;
+            margin: 0;
+        }
+        li {
+            overflow: hidden;
         }
 
         li.size-1 {
-            height: 3.5em;
+            height: 34px;
         }
 
         li.size-2 {
-            height: 7em;
+            height: 69px;
+        }
+        li.size-4 {
+            height: 139px;
         }
 
         li.geo     { background-color: #aaffaa }
         li.keynote { background-color: #ffaaaa}
+        li.deep { background-color: #aaaaaa}
+        li.advocacy { background-color: #aaffff}
+        li.db { background-color: #99ff99}
+        li.web { background-color: #ffff99}
+        li.perl6 { background-color: #7fff00}
+        li.general { background-color: #ff9999}
+        li.misc { background-color: #ffffaa}
     </style>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
@@ -42,6 +55,11 @@
                     li = $('<li class="talk">').html( talk.name );
                     li.addClass( talk.tag );
                     li.addClass( 'size-' + talk.size );
+                    li.attr({
+                        tag: talk.tag,
+                        size: talk.size,
+                        popularity: talk.popularity
+                    });
                     ul.append(li);
                 });
                 outer.append(div);
@@ -52,11 +70,29 @@
                 connectWith: uls,
                 cancel: 'li:not(.talk)',
             }).disableSelection;
+
+            $('#save').click(function () {
+                $.each(tracks, function (i, v) {
+                    ul = $(uls[i]);
+                    v.talks = $.map(ul.find('li'), function (v, i) {
+                        var $v = $(v);
+                        console.log($v);
+                        return {
+                            tag: $v.attr('tag'),
+                            size: $v.attr('size'),
+                            popularity: $v.attr('popularity'),
+                            name: $v.html(),
+                        }
+                    });
+                });
+                console.log(tracks);
+            });
         });
     </script>
 </head>
 <body>
     <h1> Talk sorter prototype (no backend saving...) </h1>
+    <button id="save">save (WIP)</button>
     <ul id="outer">
     </ul>
 </body>
