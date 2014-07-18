@@ -30,59 +30,8 @@
     </style>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+    <script src="http://xantronix.net/yapc.json"></script>
     <script>
-        tracks = [
-            {
-                name: 'Day 1, Room 1',
-                talks: [
-                    {
-                        name: 'osfameron: Civic Hacking',
-                        size: 1,
-                        tag: 'geo',
-                    },
-                    {
-                        name: 'sawyer: The Joy in What We Do',
-                        size: 2,
-                        tag: 'keynote',
-                    },
-                ]
-            },
-            {
-                name: 'Day 1, Room 2',
-                talks: [],
-            },
-            {
-                name: 'Day 1, Room 3',
-                talks: [],
-            },
-
-            {
-                name: 'Day 2, Room 1',
-                talks: [],
-            },
-            {
-                name: 'Day 2, Room 2',
-                talks: [],
-            },
-            {
-                name: 'Day 2, Room 3',
-                talks: [],
-            },
-
-            {
-                name: 'Day 3, Room 1',
-                talks: [],
-            },
-            {
-                name: 'Day 3, Room 2',
-                talks: [],
-            },
-            {
-                name: 'Day 3, Room 3',
-                talks: [],
-            },
-        ];
-
         $(function () {
             var outer = $('#outer');
             $.each( tracks, function (i,track) {
