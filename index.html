@@ -20,26 +20,34 @@
             overflow: hidden;
         }
 
-        li.size-1 {
-            height: 34px;
-        }
+        li.size-1 { height: 34px; }
+        li.size-2 { height: 69px; }
+        li.size-4 { height: 139px; }
+        li.size-6 { height: 209px; }
 
-        li.size-2 {
-            height: 69px;
-        }
-        li.size-4 {
-            height: 139px;
-        }
+        li { background-color: pink }
 
         li.geo     { background-color: #aaffaa }
         li.keynote { background-color: #ffaaaa}
-        li.deep { background-color: #aaaaaa}
+        li.deep { background-color: darkgrey; color: white }
         li.advocacy { background-color: #aaffff}
         li.db { background-color: #99ff99}
         li.web { background-color: #ffff99}
         li.perl6 { background-color: #7fff00}
         li.general { background-color: #ff9999}
         li.misc { background-color: #ffffaa}
+        li.devops { background-color: #ff6666}
+        li.beginner { background-color: lightblue }
+        li.framework { background-color: black; color: white }
+        li.legacy { background-color: darkblue; color: white }
+        li.realworld { background-color: darkgreen; color: white }
+        li.test { background-color: yellow }
+
+        li.new { font-weight: bold; background-color: white; color: red; size: 1.2em }
+
+        li.break { background-color: #00ff00; font-weight: bold; }
+        li.spacer { background-color: #ffffff; color: #eeeeee }
+
     </style>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
@@ -47,11 +55,8 @@
         $(function () {
 
             process_tracks = function (tracks) {
-                console.log(tracks);
                 var outer = $('#outer');
-                console.log("1");
                 $.each( tracks, function (i,track) {
-                    console.log("2");
                     div = $('<div>').html( $('<h2>').html( track.name ) );
                     ul = $('<ul>');
                     div.append(ul);
@@ -80,7 +85,6 @@
                         ul = $(uls[i]);
                         v.talks = $.map(ul.find('li'), function (v, i) {
                             var $v = $(v);
-                            console.log($v);
                             return {
                                 tag: $v.attr('tag'),
                                 size: $v.attr('size'),
@@ -95,7 +99,6 @@
                         data: { 'json': JSON.stringify(tracks) }, 
                         dataType: 'text',
                         success: function (query) {
-                            alert(query);
                             window.location = '?' + query;
                         },
                         complete: function (a,b,c) {
@@ -119,7 +122,8 @@
 </head>
 <body>
     <h1> Talk sorter prototype </h1>
-    <button id="save">save (WIP)</button>
+    <button id="save">save your changes</button>
+    (<b>NB:</b> this will create a <i>new URL</i> with changes, that you can post for discussion) 
     <ul id="outer">
     </ul>
 </body>
