@@ -1,31 +1,52 @@
 <html>
 <head>
     <style>
-        ul#outer div {
+        div#outer div {
             float: left;
-            max-width: 9%;
+            max-width: 10%;
         }
-        ul#outer ul {
+        div#outer ul {
             background: #eee;
-            padding: 5px;
-            width: 100%;
+            padding: 0px;
+            font-size: x-small;
         }
-        ul#outer div li {
+        div#outer div li {
             list-style-type: none;
-            padding: 2px;
-            border-bottom: solid 1px black;
             margin: 0;
         }
         li {
             overflow: hidden;
         }
 
+        li.size-0 { height: 34px; }
         li.size-1 { height: 34px; }
-        li.size-2 { height: 69px; }
-        li.size-4 { height: 139px; }
-        li.size-6 { height: 209px; }
+        li.size-2 { height: 68px; }
+        li.size-4 { height: 136px; }
+        li.size-6 { height: 204px; }
 
-        li { background-color: pink }
+        li.size-10 { height: 34px;  /* 10 min short-break */ }
+        li.size-20 { height: 68px;  /* 20 min talk */ }
+        li.size-30 { height: 102px; /* 30 min coffee-break */ }
+        li.size-50 { height: 170px; /* 50 min talk */ }
+        li.size-60 { height: 204px; /* 60 min lightning-talks/lunch */ }
+
+        li {
+            background-color: pink;
+
+            /*
+                Gradient background instead of boxes for delimiting
+                schedule items. This CSS code was generated using
+                http://www.colorzilla.com/gradient-editor/
+            */
+
+            background: -moz-linear-gradient(-45deg, rgba(255,255,255,0.33) 0%, rgba(255,255,255,0.17) 50%, rgba(0,0,0,0.17) 100%);
+            background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,0.33)), color-stop(50%,rgba(255,255,255,0.17)), color-stop(100%,rgba(0,0,0,0.17)));
+            background: -webkit-linear-gradient(-45deg, rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.17) 50%,rgba(0,0,0,0.17) 100%);
+            background: -o-linear-gradient(-45deg, rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.17) 50%,rgba(0,0,0,0.17) 100%);
+            background: -ms-linear-gradient(-45deg, rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.17) 50%,rgba(0,0,0,0.17) 100%);
+            background: linear-gradient(135deg, rgba(255,255,255,0.33) 0%,rgba(255,255,255,0.17) 50%,rgba(0,0,0,0.17) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abffffff', endColorstr='#2b000000',GradientType=1 );
+        }
 
         li.geo     { background-color: #aaffaa }
         li.keynote { background-color: #ffaaaa}
@@ -124,7 +145,7 @@
     <h1> Talk sorter prototype </h1>
     <button id="save">save your changes</button>
     (<b>NB:</b> this will create a <i>new URL</i> with changes, that you can post for discussion) 
-    <ul id="outer">
-    </ul>
+    <div id="outer">
+    </div>
 </body>
 </html>
