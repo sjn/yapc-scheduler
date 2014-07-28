@@ -1,0 +1,9 @@
+YAPC schedule editor
+
+To install deps:
+
+  cpanm --installdeps .
+
+To run:
+
+  plackup yapc.psgi
